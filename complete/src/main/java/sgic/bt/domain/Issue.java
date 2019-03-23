@@ -1,8 +1,13 @@
 package sgic.bt.domain;
 
+import javax.validation.constraints.NotEmpty;
+
 public class Issue {
+	
 private long id;
+	@NotEmpty
 private String title;
+	@NotEmpty
 private String description;
 
 public long getId() {
